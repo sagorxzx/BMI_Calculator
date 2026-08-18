@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-weight-scale"></i> BMI Calculator</h1>
+        </header>
+
+        <div class="calculator-grid">
+            <div class="input-panel">
+                <div class="form-group">
+                    <label><i class="fas fa-ruler-vertical"></i> Height (feet)</label>
+                    <div class="height-row">
+                        <div class="input-unit">
+                            <input type="number" id="height-feet" min="1" max="8" step="1" placeholder="5">
+                            <span class="unit-label">ft</span>
+                        </div>
+                        <div class="input-unit">
+                            <input type="number" id="height-inches" min="0" max="11" step="1" placeholder="6">
+                            <span class="unit-label">in</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label><i class="fas fa-weight-hanging"></i> Weight</label>
+                    <div class="input-unit">
+                        <input type="number" id="weight" min="20" max="350" step="0.1" placeholder="70">
+                        <span class="unit-label">kg</span>
+                    </div>
+                </div>
+
+                <button class="btn-calc" id="calculate-btn">
+                    <i class="fas fa-calculator"></i> Calculate BMI
+                </button>
+            </div>
+
+            <div class="result-panel">
+                <div class="result-card" id="result-card">
+                    <div id="placeholder-view">
+                        <div class="placeholder-text">
+                            <i class="fas fa-heart-pulse"></i>
+                            <p>Your BMI will appear here</p>
+                            <span style="font-size:0.8rem; opacity:0.6;">enter your details & press calculate</span>
+                        </div>
+                    </div>
+
+                    <div id="result-view" class="hidden">
+                        <div class="bmi-number" id="bmi-value">--</div>
+                        <div class="bmi-tag" id="bmi-category">Category</div>
+                        <div class="bmi-note" id="bmi-message"></div>
+                    </div>
+                </div>
+
+                <div class="bmi-standards">
+                    <h3><i class="fas fa-chart-simple"></i> BMI Reference</h3>
+                    <div class="reference-grid">
+                        <div class="ref-card ref-underweight">
+                            <div class="ref-icon"><i class="fas fa-arrow-down"></i></div>
+                            <div class="ref-label">Underweight</div>
+                            <div class="ref-range">&lt; 18.5</div>
+                        </div>
+                        <div class="ref-card ref-normal">
+                            <div class="ref-icon"><i class="fas fa-check-circle"></i></div>
+                            <div class="ref-label">Normal</div>
+                            <div class="ref-range">18.5 – 24.9</div>
+                        </div>
+                        <div class="ref-card ref-overweight">
+                            <div class="ref-icon"><i class="fas fa-arrow-up"></i></div>
+                            <div class="ref-label">Overweight</div>
+                            <div class="ref-range">25 – 29.9</div>
+                        </div>
+                        <div class="ref-card ref-obese">
+                            <div class="ref-icon"><i class="fas fa-exclamation-triangle"></i></div>
+                            <div class="ref-label">Obese</div>
+                            <div class="ref-range">≥ 30</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
