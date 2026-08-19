@@ -11,6 +11,12 @@ A clean, modern, and responsive Body Mass Index (BMI) calculator built with HTML
 ![Mobile View](screenshots/mobile.png)
 *Mobile responsive layout*
 
+<div align="center">
+<img src="Normal.png">
+<img src="Normal_Desktop.png">
+<img src="Obese_Desktop.png">
+</div>
+
 ## ✨ Features
 
 - **Instant BMI Calculation** – Get your BMI and category with one click or by pressing Enter.
