@@ -2,6 +2,9 @@
 
 A clean, modern, and responsive Body Mass Index (BMI) calculator built with HTML, CSS, and JavaScript. It provides instant BMI calculations based on height (feet/inches) and weight (kg) inputs, along with clear category feedback and a visual reference guide.
 
+![Desktop View](Normal_desktop.png)
+*Desktop view of the BMI Calculator*
+
 ![Desktop View](screenshots/desktop.png)
 *Desktop view of the BMI Calculator*
 
